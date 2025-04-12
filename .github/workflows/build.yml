@@ -43,7 +43,7 @@ jobs:
           echo "Buildozer output filename: ${{ steps.buildozer.outputs.filename }}"
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: package
           path: ${{ steps.buildozer.outputs.filename }}  # Ensure this is correct (check the debug output)
